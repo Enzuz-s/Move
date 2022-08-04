@@ -89,6 +89,7 @@ class Handler(FileSystemEventHandler):
                         move(destination_dir_music, entry, name)
 
                 elif name.lower().endswith(tuple(video_extensions)):
+                    time.sleep(60)
                     print(f'Moving video {name}')
                     move(destination_dir_video, entry, name)
 
@@ -109,6 +110,7 @@ class Handler(FileSystemEventHandler):
                     move(destination_dir_office, entry, name)
 
                 elif name.lower().endswith(tuple(arch_comp_extensions)):
+                    time.sleep(520)
                     print(f'Moving zip {name}')
                     move(destination_dir_arch_comp, entry, name)
 
